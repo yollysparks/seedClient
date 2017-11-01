@@ -1,3 +1,17 @@
+# CA3FrontGroup6
+Front end point for CA3 group6
+What we have done so far we can be able to sign up using our seed server, 
+so the client can connect to the server.
+all the non authentificated users can see images, we are currently working on fetching the images from the backend where we a can access pictures and save uploaded pictures in our database.
+=======================================================================================================================================
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
