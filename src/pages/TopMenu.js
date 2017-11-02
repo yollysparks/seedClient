@@ -32,7 +32,8 @@ class TopMenu extends Component {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/user">Page for Users </Link></li>
               <li><Link to="/admin">Page for Admins</Link></li>
-            </ul>
+              <li><Link to="/houseads">what we offer</Link></li>
+              </ul>
             <ul className="nav navbar-nav navbar-right">
               <li className="navbar-text" style={{ color: "steelBlue" }}>{logInStatus}</li>
               <li>
@@ -45,6 +46,7 @@ class TopMenu extends Component {
                       <span className="glyphicon glyphicon-log-out"></span> Login </Link>
                   )}
               </li>
+              <li><Link to="/userpageform">logged in</Link></li>
             </ul>
           </div>
         </nav>

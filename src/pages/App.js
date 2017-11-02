@@ -6,7 +6,8 @@ import About from "./About";
 import UserPage from "./UserPage";
 import AdminPage from "./AdminPage";
 import TopMenu from "./TopMenu";
-
+import HouseAds from "./HouseAds";
+import userpageform from "./UserPageForm";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/user" component={UserPage} />
         <Route path="/admin" component={AdminPage} />
-      </Switch>
+        <Route path="/houseads" render={(props) => (<HouseAds number={23} />)} />      
+     </Switch>
     </div>
   )
 }
