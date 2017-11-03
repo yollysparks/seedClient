@@ -81,6 +81,14 @@ class AuthenticationHandler {
     }
   }
 
+  createuser = (username, password, cb) => {
+    console.log("NOooooo")
+  this._errorMessage = "";
+  if (this._token != null) {
+    this._userWasLoggenIn(cb);
+  }}
+
+
   login = (username, password, cb) => {
     this._errorMessage = "";
     if (this._token != null) {
@@ -119,7 +127,7 @@ class AuthenticationHandler {
   }
 }
 
-var auth = new AuthenticationHandler();
+let auth = new AuthenticationHandler();
 
 //Call init, if a new Instance was created due to a refresh (F5 or similar)
 auth.initDataFromToken();

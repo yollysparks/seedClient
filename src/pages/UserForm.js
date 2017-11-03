@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import reg from "../authorization/auth";
+import auth from "../authorization/auth";
 
 
 class UserForm extends React.Component{
@@ -9,9 +9,19 @@ class UserForm extends React.Component{
             user: {name: "",password: ""}
     };
   }
+  
   handleSubmit= (evt)=>{
       evt.preventDefault();
       window.alert(JSON.stringify(this.state.user));
+      const user = this.state.user.name;
+      const pass = this.state.user.password;
+      auth.createuser(user, pass, (err, loggedIn) => {
+        if (err) {
+          return this.setState({ err: err.errorMessage });
+        }
+        this.setState({ err: "" });
+        this.props.history.push("/");
+      });
   }
   handleInput=(event)=>{
       const target = event.target;
