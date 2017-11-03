@@ -8,14 +8,16 @@ import AdminPage from "./AdminPage";
 import TopMenu from "./TopMenu";
 import HouseAds from "./HouseAds";
 import userpageform from "./UserPageForm";
+import userform from "./UserForm";
 
 function App() {
   return (
     <div>
-      <TopMenu />
+      <TopMenu /> 
       <Switch>
         <Route path="/login" component={Login} />
         <Route path="/logout" component={Logout} />
+        <Route path="/userform" component={userform}/>
         <Route path="/about" component={About} />
         <Route path="/user" component={UserPage} />
         <Route path="/admin" component={AdminPage} />

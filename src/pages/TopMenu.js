@@ -46,6 +46,7 @@ class TopMenu extends Component {
                       <span className="glyphicon glyphicon-log-out"></span> Login </Link>
                   )}
               </li>
+              <li><Link to="/userform">signup</Link></li>
               <li><Link to="/userpageform">logged in</Link></li>
             </ul>
           </div>
