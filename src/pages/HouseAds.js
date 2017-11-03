@@ -7,6 +7,7 @@ class HouseAds extends Component{
          return x + 20;
     }
     render(){
+  
         return(
             
             <div className = "container" > 
@@ -31,6 +32,7 @@ class HouseAds extends Component{
             <div className = "col-sm-6">
             <span><b> 5 Bedrooms, 5.5 Bathrooms/Hot Tub /Wifi/All Amenities</b></span>
             <p>Rated &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+
             <p> located in a history city mombasa kenya.</p>
             </div>
             </div>
@@ -68,7 +70,8 @@ class HouseAds extends Component{
         
         )
     }
-
+    
 }
+
 
 export default HouseAds;

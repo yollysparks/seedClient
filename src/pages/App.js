@@ -22,7 +22,8 @@ function App() {
         <Route path="/user" component={UserPage} />
         <Route path="/admin" component={AdminPage} />
         <Route path="/houseads" render={(props) => (<HouseAds number={23} />)} />      
-     </Switch>
+        <Route path="/userpageform" component={userpageform} />
+        </Switch>
     </div>
   )
 }
