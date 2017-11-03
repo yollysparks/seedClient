@@ -8,7 +8,8 @@ class Images extends Component{
     };
   }
 componentDidMount(){
-  fetch('http://localhost:8084/SeedPush/api/adress/all').then(adress =>{
+  fetch('http://localhost:8084/SeedPush/api/adress/all')
+  .then(adress =>{
     return adress.json();
   }).then(data =>{
     let imageurl = data.adress.map((pic) =>{

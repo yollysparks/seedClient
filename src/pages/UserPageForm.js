@@ -65,8 +65,6 @@ class UserPageForm extends Component {
                 <button onClick= {this.handleClear} type="button" class="btn btn-default">Clear</button>
             </div>
        </form>
-
-         <p>{JSON.stringify(this.state.house)}</p>
     </div>
  </div>
       );
