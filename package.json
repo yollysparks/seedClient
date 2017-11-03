@@ -1,6 +1,6 @@
 {
   "name": "seedclient",
-  "serverURL": "http://localhost:8084/SeedPush/",
+  "serverURL": "http://localhost:8080/SeedPush/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,5 +17,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "Front end point for CA3 group6 What we have done so far we can be able to sign up using our seed server,  so the client can connect to the server. all the non authentificated users can see images, we are currently working on fetching the images from the backend where we a can access pictures and save uploaded pictures in our database. =======================================================================================================================================",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yollysparks/seedClient.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yollysparks/seedClient/issues"
+  },
+  "homepage": "https://github.com/yollysparks/seedClient#readme"
 }
