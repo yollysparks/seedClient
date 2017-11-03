@@ -9,6 +9,7 @@ import TopMenu from "./TopMenu";
 import HouseAds from "./HouseAds";
 import userpageform from "./UserPageForm";
 import userform from "./UserForm";
+import images from"./images";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/admin" component={AdminPage} />
         <Route path="/houseads" render={(props) => (<HouseAds number={23} />)} />      
         <Route path="/userpageform" component={userpageform} />
+        <Route path="/images" component={images}/>
         </Switch>
     </div>
   )

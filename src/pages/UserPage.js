@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import userData from "../facades/userFacade";
+import { Link } from "react-router-dom";
 
 class UserPage extends Component {
 
@@ -25,7 +26,8 @@ class UserPage extends Component {
         <div>
           <h2>Users</h2>
           <p>This message is fetched from the server if you are properly logged in</p>
-          
+          <li><Link to="/userpageform">search city</Link></li>
+          <li><Link to="/images">images</Link></li>
           <div className="msgFromServer">
             {this.state.data}  
           </div>
