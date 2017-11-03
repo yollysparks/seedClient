@@ -21,7 +21,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/user" component={UserPage} />
         <Route path="/admin" component={AdminPage} />
-        <Route path="/houseads" render={(props) => (<HouseAds number={23} />)} />      
+        <Route path="/houseads" render={(props) => (<HouseAds number={23} />)} />   
+        <Route path="/userpageform" component={userpageform} />   
      </Switch>
     </div>
   )

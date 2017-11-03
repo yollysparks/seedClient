@@ -1,9 +1,12 @@
-import React from "react"
+import React, {Component} from "react"
+import reg from "../authorization/auth";
+
+
 class UserForm extends React.Component{
     constructor(props){
         super (props);
         this.state = {
-            user: {name: "",email: "",password: ""}
+            user: {name: "",password: ""}
     };
   }
   handleSubmit= (evt)=>{
@@ -26,9 +29,6 @@ class UserForm extends React.Component{
           <form onSubmit={this.handleSubmit}  >   
               <input id= "name" type="text" value={this.state.user.name}   
               placeholder="name" onChange={this.handleInput}/>
-              <br/>
-              <input id= "email" type="text" value={this.state.user.email}   
-              placeholder="email" onChange={this.handleInput}/>
               <br/>
               <input id= "password" type="text" value={this.state.user.password}   
               placeholder="password" onChange={this.handleInput}/>

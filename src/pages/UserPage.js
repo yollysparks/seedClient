@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import userData from "../facades/userFacade";
+import reg from "../authorization/auth";
+
 
 class UserPage extends Component {
 
