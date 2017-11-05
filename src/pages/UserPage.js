@@ -26,8 +26,8 @@ class UserPage extends Component {
         <div>
           <h2>Users</h2>
           <p>This message is fetched from the server if you are properly logged in</p>
-          <li><Link to="/userpageform">search city</Link></li>
-          <li><Link to="/images">images</Link></li>
+          <li><Link to="/userpageform">Add city</Link></li>
+          <li><Link to="/images">Images</Link></li>
           <div className="msgFromServer">
             {this.state.data}  
           </div>

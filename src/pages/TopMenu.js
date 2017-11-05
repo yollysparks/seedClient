@@ -40,15 +40,16 @@ class TopMenu extends Component {
               <li>
                 {this.state.loggedIn ?
                   (
-                    <Link to="/logout"><span className="glyphicon glyphicon-log-in"></span> Logout</Link>
+                    <Link to="/logout">
+                      <span className="glyphicon glyphicon-log-in"></span>Logout</Link>
                   ) :
                   (
                     <Link to="/login">
                       <span className="glyphicon glyphicon-log-out"></span> Login </Link>
                   )}
               </li>
+              <li><Link to="/userpageform">loggedIn</Link></li>
               <li><Link to="/userform">signup</Link></li>
-              <li><Link to="/userpageform">logged in</Link></li>
             </ul>
           </div>
         </nav>

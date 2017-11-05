@@ -8,7 +8,7 @@ class Images extends Component{
     };
   }
 componentDidMount(){
-  fetch('http://localhost:8084/SeedPush/api/adress/all')
+  fetch('http://localhost:8084/SeedPush')
   .then(adress =>{
     return adress.json();
   }).then(data =>{
@@ -26,6 +26,10 @@ componentDidMount(){
 render(){
   return(
     <div className="container2">
+    <form action="http://localhost:8084/SeedPush" enctype="multipart/form-data" method="post">
+    <label>Select File</label><input type= "file" name="file" /> <br/><br/>
+    <button id="btn">Upload</button>
+    </form>
      <div className="container1">
      </div>
      </div>
