@@ -8,7 +8,7 @@ class Images extends Component{
     };
   }
 componentDidMount(){
-  fetch('http://localhost:8084/SeedPush')
+  fetch('http://zork.cf/SeedPush-1.0-SNAPSHOT/')
   .then(adress =>{
     return adress.json();
   }).then(data =>{
@@ -26,7 +26,7 @@ componentDidMount(){
 render(){
   return(
     <div className="container2">
-    <form action="http://localhost:8084/SeedPush" enctype="multipart/form-data" method="post">
+    <form action="http://zork.cf/SeedPush-1.0-SNAPSHOT/" enctype="multipart/form-data" method="post">
     <label>Select File</label><input type= "file" name="file" /> <br/><br/>
     <button id="btn">Upload</button>
     </form>

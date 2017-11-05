@@ -1,6 +1,6 @@
 {
   "name": "seedclient",
-  "serverURL": "http://localhost:8080/SeedPush/",
+  "serverURL": "http://zork.cf/backend/SeedPush-1.0-SNAPSHOT/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
