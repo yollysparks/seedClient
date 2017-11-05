@@ -5,7 +5,7 @@ import auth from "../authorization/auth";
 class UserForm extends React.Component{
     constructor(props){
         super (props);
-        this.state = {
+        this.state = {err: "", 
             user: {name: "",password: ""}
     };
   }
@@ -24,19 +24,20 @@ class UserForm extends React.Component{
       });
   }
   handleInput=(event)=>{
-      const target = event.target;
+      const target = event.target.id;
       const prop = target.id;
-      var value =target.value;
-      var user= this.state.user;
-      user[prop]= value;
+      const value = event.target.value;
+      let user= this.state.user;
+      user[target]= value;
       this.setState({
-          user: user
+          user
       });
     }
        render() {
          return(
           <div>
-          <form onSubmit={this.handleSubmit}  >   
+          <form onSubmit={this.handleSubmit}  >
+          <h2> Please Sign Up </h2>   
               <input id= "name" type="text" value={this.state.user.name}   
               placeholder="name" onChange={this.handleInput}/>
               <br/>
@@ -45,6 +46,10 @@ class UserForm extends React.Component{
               <br/>
               <button>Submit</button>
               </form>
+              {this.state.err && (
+                <div className="alert alert-danger errmsg" role="alert">
+                  {this.state.err}
+                </div>)}
               </div>
          );
      }
