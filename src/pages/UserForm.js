@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import auth from "../authorization/auth";
 
 
-class UserForm extends React.Component{
+class UserForm extends Component{
     constructor(props){
         super (props);
         this.state = {err: "", 
